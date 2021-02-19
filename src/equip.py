@@ -20,7 +20,7 @@ def randweapon(lvl, magictype = None):
 
 def randmagiceffect(magictype):
     if magictype == "bonus":
-        return "+1 fire damage"
+        return random.choice(["+1 fire damage", "+2 cold damage"])
     elif magictype == "cursed":
         return "max hp drain -1"
     else:
